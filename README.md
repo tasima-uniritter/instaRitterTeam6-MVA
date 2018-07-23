@@ -10,8 +10,7 @@ Wagner Pedrosa
 
 APP : instaRitter
 Modelo de Arquitetura: Clean
-Tecnologia: JAVA
-Testes : Selenium e Spec
+Tecnologias utilizadas: Java 8, SpringBoot, Junit, MAVEN, Selenium e Spec
 
 
 
