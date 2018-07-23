@@ -18,7 +18,7 @@
 
 # Tecnologias utilizadas
 
-  Java 8, SpringBoot, Junit, MAVEN, Selenium e Spec
+  Java 8, SpringBoot, Junit, MAVEN, circleci, Selenium e Spec
 
 
 
