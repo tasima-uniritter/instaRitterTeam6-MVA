@@ -1,24 +1,24 @@
 # instaRitterTeam6-MVA
-Trabalho Final Disciplina de Arquitetura para WEB - Curso de Pós-graduação
+  Trabalho Final Disciplina de Arquitetura para WEB - Curso de Pós-graduação
 
 # Integrantes do Grupo
 
-Fábio Castilos;
-Leandro Akira;
-Vinícius;
-Wagner Pedrosa;
+  Fábio Castilos;
+  Leandro Akira;
+  Vinícius;
+  Wagner Pedrosa;
 
 # APP
 
-## instaRitter
+  instaRitter
 
 # Modelo de Arquitetura
 
-Clean
+  Clean
 
 # Tecnologias utilizadas
 
-Java 8, SpringBoot, Junit, MAVEN, Selenium e Spec
+  Java 8, SpringBoot, Junit, MAVEN, Selenium e Spec
 
 
 
