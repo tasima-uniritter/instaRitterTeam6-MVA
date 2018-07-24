@@ -4,7 +4,7 @@
 exports.config = {
 	seleniumAddress: 'http://localhost:8080/',
 	
-	specs: ['UI/spec/*.js'],*/
+	/*specs: ['UI/spec/*.js'],*/
 	
 	/* Iniciando o site desejado */
 	baseUrl: 'http://localhost:8080/',
