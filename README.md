@@ -1,24 +1,28 @@
 # instaRitterTeam6-MVA
-  Trabalho Final Disciplina de Arquitetura para WEB - Curso de Pós-graduação
+  Trabalho Final Disciplina de Arquitetura para WEB - Curso de Pós-graduação em Sistemas de Informação e Metodologias Ágeis
 
-# Integrantes do Grupo
+# Integrantes do Grupo:
 
   Fábio Castilos;
   Leandro Akira;
   Vinícius;
   Wagner Pedrosa;
 
-# APP
+# APP:
 
-  instaRitter
+  InstaRitter é uma rede de compartilhamento de fotos 
 
-# Modelo de Arquitetura
+# Modelo de Arquitetura:
 
-  Clean
+  Clean Architecture 
 
-# Tecnologias utilizadas
+# Tecnologias utilizadas:
 
-  Java 8, SpringBoot, Junit, MAVEN, circleci, Selenium e Spec
+  Java 8, SpringBoot, Junit, MAVEN, circleci, Selenium e Protractor.
+  
+# Testes Protractor:
+
+[![CircleCI](https://circleci.com/gh/tasima-uniritter/instaRitterTeam6-MVA.svg?style=svg)](https://circleci.com/gh/tasima-uniritter/instaRitterTeam6-MVA)  
 
 
 
