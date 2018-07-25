@@ -14,7 +14,7 @@ var instaritter = function(){
 	*/
 	this.get = function() {
 		//browser.get('http://automationpractice.com/index.php?controller=contact');
-		browser.get('http://localhost:8080/index.html');
+		browser.get('http://localhost:8080/');
 	};
 	/*
 	this.fillForm = function (id_contact, email, id_order, fileUpload, message) {
