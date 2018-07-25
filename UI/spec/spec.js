@@ -3,25 +3,26 @@
 /**
  * @file spec.js
  */
-var ContactPage = require('./pages/contactPage.js');
+var InstaRitter = require('./pages/instaritter.js');
 
 // Casos de Teste
-describe('ContactUs Suite Scenarios', function(){
+describe('instaritter Suite Scenarios', function(){
 	beforeEach(function(){
 		browser.ignoreSynchronization = true;
 		browser.driver.manage().window().maximize();
-		ContactPage.get();
+		InstaRitter.get();
 	});	
-	
-	it('Verifica se o título da página é Contact us - My Store', function(){
+
+	it('Verifica se o título da página é InstaRitter Upload / Download de Fotos', function(){
 		browser.get('');
-		expect(browser.getTitle()).toEqual('Contact us - My Store');
+		expect(browser.getTitle()).toEqual('InstaRitter Upload / Download de Fotos');
 	});
-	
+/*	
 	it('Verifica se o link Contact us é apresentado na tela', function(){
 		browser.get('');
 		expect(element(by.id('contact-link')).getText()).toEqual('Contact us');
 	});
+
 	
 	it('Verifica se o link Sign in é apresentado na tela', function(){
 		browser.get('');
@@ -132,4 +133,5 @@ describe('ContactUs Suite Scenarios', function(){
 		var mypic = element(by.css("img[src*='http://automationpractice.com/img/logo.jpg']"));
 		expect(mypic.isPresent()).toBe(true);
 	});
+*/	
 });
