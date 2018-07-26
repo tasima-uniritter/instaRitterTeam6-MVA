@@ -3,7 +3,7 @@
 /**
  * @file spec.js
  */
-var InstaRitter = require('./pages/instaritter.js');
+
 
 // Casos de Teste
 describe('instaritter Suite Scenarios', function(){
