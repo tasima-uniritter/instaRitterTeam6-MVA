@@ -8,11 +8,12 @@ body {
     margin: 0;
     padding: 0;
     font-weight: 400;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
     line-height: 1.58;
     color: #333;
-    background-color: #993333;
+    background-color: #800000;
+    
 }
 
 body:before {
@@ -21,7 +22,7 @@ body:before {
     position: absolute;
     top: 0;
     left: 0;
-    background: #993333;
+    background-color: #800000;
     content: "";
     z-index: 0;
 }
@@ -62,7 +63,7 @@ button {
 }
 
 button.primary {
-    background-color: #128ff2;
+    background-color: #800000;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     color: #fff;
 }
@@ -72,7 +73,7 @@ input {
 }
 
 input[type="file"] {
-    border: 1px solid #128ff2;
+    border: 1px solid #800000;
     padding: 6px;
     max-width: 100%;
 }
@@ -118,6 +119,12 @@ input[type="file"] {
 
 .upload-header h2 {
     font-weight: 500;
+   background-image:url("/images/header.jpg"); 
+    font-size: 1px; 
+    color: #800000;
+    height:132px;
+    width:750px;
+    margin:-20px;    
 }
 
 .single-upload {
