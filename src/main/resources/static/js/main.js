@@ -22,11 +22,11 @@ function uploadSingleFile(file) {
         var response = JSON.parse(xhr.responseText);
         if(xhr.status == 200) {
             singleFileUploadError.style.display = "none";
-            singleFileUploadSuccess.innerHTML = "<p>Foto carregada com sucesso!.</p><p>Download Url : <a href='" + response.fileDownloadUri + "' target='_blank'>" + response.fileDownloadUri + "</a></p>";
+            singleFileUploadSuccess.innerHTML = "<p>Foto carregada com sucesso!</p><p>Download Url : <a href='" + response.fileDownloadUri + "' target='_blank'>" + response.fileDownloadUri + "</a></p>";
             singleFileUploadSuccess.style.display = "block";
         } else {
             singleFileUploadSuccess.style.display = "none";
-            singleFileUploadError.innerHTML = (response && response.message) || "Ops!!! ocorreu um erro inesperado.";
+            singleFileUploadError.innerHTML = (response && response.message) || "Ccorreu um erro inesperado!";
         }
     }
 
@@ -55,7 +55,7 @@ function uploadMultipleFiles(files) {
             multipleFileUploadSuccess.style.display = "block";
         } else {
             multipleFileUploadSuccess.style.display = "none";
-            multipleFileUploadError.innerHTML = (response && response.message) || "Ops!!! ocorreu um erro inesperado.";
+            multipleFileUploadError.innerHTML = (response && response.message) || "Ocorreu um erro inesperado!";
         }
     }
 
@@ -65,7 +65,7 @@ function uploadMultipleFiles(files) {
 singleUploadForm.addEventListener('submit', function(event){
     var files = singleFileUploadInput.files;
     if(files.length === 0) {
-        singleFileUploadError.innerHTML = "Please select a file";
+        singleFileUploadError.innerHTML = "Por favor, selecione uma foto!";
         singleFileUploadError.style.display = "block";
     }
     uploadSingleFile(files[0]);
@@ -76,7 +76,7 @@ singleUploadForm.addEventListener('submit', function(event){
 multipleUploadForm.addEventListener('submit', function(event){
     var files = multipleFileUploadInput.files;
     if(files.length === 0) {
-        multipleFileUploadError.innerHTML = "Please select at least one file";
+        multipleFileUploadError.innerHTML = "Por favor, selecione pelo menos uma foto!";
         multipleFileUploadError.style.display = "block";
     }
     uploadMultipleFiles(files);
