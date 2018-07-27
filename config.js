@@ -4,10 +4,10 @@
 exports.config = {
 	seleniumAddress: 'http://localhost:4444/wd/hub',
 	
-	specs: ['UI/spec/*.js'],
+	specs: ['spec/*.js'],
 	
 	/* Iniciando o site desejado */
-	baseUrl: 'http://localhost:8080/index.html',
+	baseUrl: 'http://localhost:8080/',
 	
 	capabilities: {
 		
