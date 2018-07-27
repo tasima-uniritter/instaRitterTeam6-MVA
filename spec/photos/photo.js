@@ -1,11 +1,11 @@
 /**
-* @file contactPage.js
+* @file photo.js
 */
 
-var ContactPage = function(){
+var Photo = function(){
 	this.fileUpload = element(by.id('singleFileUploadInput'));
 	this.message = element(by.css('upload-response'));
-	this.submitButton = element(by.type('submit'));
+	this.submitButton = element(by.css('primary submit-btn'));
 	this.singleFileUploadSuccess = element(by.id('singleFileUploadSuccess', 'Foto carregada com sucesso!'));
 	
 	this.get = function() {
@@ -27,4 +27,4 @@ var ContactPage = function(){
 	
 };
 
-module.exports = new ContactPage();
+module.exports = new Photo();
