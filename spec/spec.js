@@ -17,8 +17,7 @@ describe('ContactUs Suite Scenarios', function(){
 		browser.get('');
 		expect(browser.getTitle()).toEqual('InstaRitter Upload/Download de Fotos');
 	});
-	
-	
+		
 	it('Verifica se o Logo do website é apresentado na tela', function(){
 		browser.get('');
 		var mypic = element(by.css("upload-header h2[src*='/images/header.jpg']"));
@@ -35,13 +34,11 @@ describe('ContactUs Suite Scenarios', function(){
 		browser.get('');
 		expect(element(by.css('file-input')).getText()).toEqual('Nenhum arquivo selecionado');		
 	});
-	
-	
+		
 	it('Verifica se o botão Enviar é apresentado na tela', function(){
 		browser.get('');
-		expect(element(by.type('submit')).getText()).toEqual('Enviar');
+		expect(element(by.css('primary submit-btn')).getText()).toEqual('Enviar');
 	});
-	
 	
 	it('Exibir mensagem de sucesso, caso ocorra', function () {
 		ContactPage.submit('teste.gif');
