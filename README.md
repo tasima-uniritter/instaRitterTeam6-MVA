@@ -18,4 +18,4 @@ InstaRitter é uma rede de compartilhamento de fotos
 Clean Architecture 
 
 # Tecnologias utilizadas: 
-Java 8, SpringBoot, Junit, MAVEN, circleci, Selenium e Protractor.
+Java 8, SpringBoot, MAVEN, circleci e Protractor.
