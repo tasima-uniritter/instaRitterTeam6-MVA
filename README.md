@@ -14,4 +14,4 @@ InstaRitter - Rede de compartilhamento de fotos
 Clean Architecture 
 
 # Tecnologias utilizadas: 
-Java 8, SpringBoot, MAVEN, circleci e Protractor.
+Java 8, SpringBoot e MAVEN.
