@@ -9,7 +9,7 @@ var ContactPage = function(){
 	this.singleFileUploadSuccess = element(by.id('singleFileUploadSuccess', 'Foto carregada com sucesso!'));
 	
 	this.get = function() {
-		browser.get('http://localhost:8080/');
+		browser.get('http://localhost:8080/index.html');
 	};
 	
 	this.fillForm = function (fileUpload, message) {
