@@ -3,7 +3,7 @@
 /**
  * @file spec.js
  */
-var Photo = require('./photos/photo.js');
+/*var Photo = require('./photos/photo.js'); */
 
 // Casos de Teste
 /*describe('Cenários de Testes InstaRitter: ', function(){
@@ -18,7 +18,7 @@ var Photo = require('./photos/photo.js');
 		expect(browser.getTitle()).toEqual('InstaRitter');
 	}); */
 	
-	describe('Cenários de Testes InstaRitter: ', function() {
+describe('Cenários de Testes InstaRitter: ', function() {
 		it('should have a title', function() {
 			browser.get('http://localhost:8080/');
 			expect(browser.getTitle()).toEqual('InstaRitter');
