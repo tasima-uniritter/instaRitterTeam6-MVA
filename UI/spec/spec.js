@@ -15,7 +15,7 @@ describe('instaritter Suite Scenarios', function(){
 	});	
 
 	it('Verifica se o título da página é InstaRitter Upload/Download de Fotos', function(){
-		browser.get('');
+		browser.get('http://localhost:8080/index.html');
 		expect(browser.getTitle()).toEqual('InstaRitter Upload/Download de Fotos');
 	});
 /*	
