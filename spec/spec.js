@@ -26,18 +26,18 @@ describe('Cenários de Testes InstaRitter', function(){
 	
 	it('Verifica se a target Upload Foto é apresentado na tela', function(){
 		browser.get('http://localhost:8080/index.html');
-		expect(element(by.css('single-upload')).getText()).toEqual('Upload Foto:');
+		expect(element(by.css('.single-upload')).getText()).toEqual('Upload Foto:');
 	});
 	
 	
 	it('Verifica se há indicação de arquivo selecionado', function(){
 		browser.get('http://localhost:8080/index.html');
-		expect(element(by.id('singleUploadForm')).getText()).toEqual('Nenhum arquivo selecionado');		
+		expect(element(by.css('.singleUploadForm')).getText()).toEqual('Nenhum arquivo selecionado');		
 	});
 		
 	it('Verifica se o botão Enviar é apresentado na tela', function(){
 		browser.get('http://localhost:8080/index.html');
-		expect(element(by.css('single-upload')).getText()).toEqual('Enviar');
+		expect(element(by.css('.single-upload')).getText()).toEqual('Enviar');
 	});
 	
 	it('Exibir mensagem de sucesso, caso ocorra', function () {
