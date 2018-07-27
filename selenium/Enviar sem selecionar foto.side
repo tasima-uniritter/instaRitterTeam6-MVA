@@ -1,0 +1,32 @@
+{
+  "id": "bcb1f481-24bd-4543-93ea-fd524daf6578",
+  "name": "Untitled Project",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "5840a554-e5b0-41b9-93df-70ada7efa8d7",
+    "name": "Teste Enviar sem arquivo",
+    "commands": [{
+      "id": "adefca38-da8f-4187-93e3-6e62b10b1b13",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "value": "http://localhost:8080"
+    }, {
+      "id": "352fa06a-3eda-459a-9140-e616068be65b",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=button.primary.submit-btn",
+      "value": "51,25"
+    }]
+  }],
+  "suites": [{
+    "id": "1784b389-bdc6-4c1a-a699-51dea5d4b859",
+    "name": "Default Suite",
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5840a554-e5b0-41b9-93df-70ada7efa8d7"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": [],
+  "version": "1.0"
+}
