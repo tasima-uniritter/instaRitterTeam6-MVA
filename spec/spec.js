@@ -14,30 +14,30 @@ describe('Cenários de Testes InstaRitter', function(){
 	});	
 	
 	it('Verifica se o título da página', function(){
-		browser.get('');
+		browser.get('http://localhost:8080/index.html');
 		expect(browser.getTitle()).toEqual('InstaRitter');
 	});
 		
 	it('Verifica se o Logo do website é apresentado na tela', function(){
-		browser.get('');
+		browser.get('http://localhost:8080/index.html');
 		var mypic = element(by.css(".upload-header h2[src*='/images/header.jpg']"));
 		expect(mypic.isPresent()).toBe(true);
 	});
 	
 	it('Verifica se a target Upload Foto é apresentado na tela', function(){
-		browser.get('');
-		expect(element(by.tagName('h3')).getText()).toEqual('Upload Foto:');
+		browser.get('http://localhost:8080/index.html');
+		expect(element(by.css('single-upload')).getText()).toEqual('Upload Foto:');
 	});
 	
 	
 	it('Verifica se há indicação de arquivo selecionado', function(){
-		browser.get('');
-		expect(element(by.css('file-input')).getText()).toEqual('Nenhum arquivo selecionado');		
+		browser.get('http://localhost:8080/index.html');
+		expect(element(by.id('singleUploadForm')).getText()).toEqual('Nenhum arquivo selecionado');		
 	});
 		
 	it('Verifica se o botão Enviar é apresentado na tela', function(){
-		browser.get('');
-		expect(element(by.css('primary submit-btn')).getText()).toEqual('Enviar');
+		browser.get('http://localhost:8080/index.html');
+		expect(element(by.css('single-upload')).getText()).toEqual('Enviar');
 	});
 	
 	it('Exibir mensagem de sucesso, caso ocorra', function () {
@@ -46,7 +46,7 @@ describe('Cenários de Testes InstaRitter', function(){
 	});
 	
 	it('Exibir mensagem de erro, caso ocorra', function () {
-		Photo.submit('');
+		Photo.submit('http://localhost:8080/index.html');
 		expect(Photo.singleFileUploadSuccess.isPresent()).toBe(false);
 		expect(element(by.id('singleFileUploadError', 'Ocorreu um erro inesperado!')));
 	});
