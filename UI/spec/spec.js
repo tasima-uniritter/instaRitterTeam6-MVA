@@ -3,19 +3,20 @@
 /**
  * @file spec.js
  */
-
+var InstaRitter = require('./pages/instaRitter.js');
 
 // Casos de Teste
 describe('instaritter Suite Scenarios', function(){
+	
 	beforeEach(function(){
 		browser.ignoreSynchronization = true;
 		browser.driver.manage().window().maximize();
 		InstaRitter.get();
 	});	
 
-	it('Verifica se o título da página é InstaRitter Upload / Download de Fotos', function(){
+	it('Verifica se o título da página é InstaRitter Upload/Download de Fotos', function(){
 		browser.get('');
-		expect(browser.getTitle()).toEqual('InstaRitter Upload / Download de Fotos');
+		expect(browser.getTitle()).toEqual('InstaRitter Upload/Download de Fotos');
 	});
 /*	
 	it('Verifica se o link Contact us é apresentado na tela', function(){
