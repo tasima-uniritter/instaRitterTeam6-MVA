@@ -7,7 +7,7 @@ exports.config = {
 	specs: ['spec/*.js'],
 	
 	/* Iniciando o site desejado */
-	baseUrl: 'http://localhost:8080/index.html',
+	baseUrl: 'http://localhost:8080',
 	
 	capabilities: {
 		
