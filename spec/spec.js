@@ -6,7 +6,7 @@
 var Photo = require('./photos/photo.js');
 
 // Casos de Teste
-describe('Cenários de Testes InstaRitter', function(){
+/*describe('Cenários de Testes InstaRitter: ', function(){
 	beforeEach(function(){
 		browser.ignoreSynchronization = true;
 		browser.driver.manage().window().maximize();
@@ -16,7 +16,15 @@ describe('Cenários de Testes InstaRitter', function(){
 	it('Verifica se o título da página', function(){
 		browser.get('http://localhost:8080/index.html');
 		expect(browser.getTitle()).toEqual('InstaRitter');
+	}); */
+	
+	describe('Cenários de Testes InstaRitter: ', function() {
+		it('should have a title', function() {
+			browser.get('http://localhost:8080/');
+			expect(browser.getTitle()).toEqual('InstaRitter');
+		});
 	});
+	
 		
 	it('Verifica se o Logo do website é apresentado na tela', function(){
 		browser.get('http://localhost:8080/index.html');
