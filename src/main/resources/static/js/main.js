@@ -20,15 +20,15 @@ function uploadSingleFile(file) {
     xhr.onload = function() {
         console.log(xhr.responseText);
         var response = JSON.parse(xhr.responseText);
-        if(xhr.status == 200) {
+        if(xhr.status === 200) {
             singleFileUploadError.style.display = "none";
-            singleFileUploadSuccess.innerHTML = "<p>Foto carregada com sucesso!.</p><p>Download Url : <a href='" + response.fileDownloadUri + "' target='_blank'>" + response.fileDownloadUri + "</a></p>";
+            singleFileUploadSuccess.innerHTML = "<p>Foto carregada com sucesso!</p><p>Download Url: <a href='" + response.fileDownloadUri + "' target='_blank'>" + response.fileDownloadUri + "</a></p>";
             singleFileUploadSuccess.style.display = "block";
         } else {
             singleFileUploadSuccess.style.display = "none";
-            singleFileUploadError.innerHTML = (response && response.message) || "Ops!!! ocorreu um erro inesperado.";
+            singleFileUploadError.innerHTML = (response && response.message) || "Ocorreu um erro inesperado!";
         }
-    }
+    };
 
     xhr.send(formData);
 }
@@ -45,7 +45,7 @@ function uploadMultipleFiles(files) {
     xhr.onload = function() {
         console.log(xhr.responseText);
         var response = JSON.parse(xhr.responseText);
-        if(xhr.status == 200) {
+        if(xhr.status === 200) {
             multipleFileUploadError.style.display = "none";
             var content = "<p>Todas as fotos foram carregadas com sucesso!</p>";
             for(var i = 0; i < response.length; i++) {
@@ -55,10 +55,9 @@ function uploadMultipleFiles(files) {
             multipleFileUploadSuccess.style.display = "block";
         } else {
             multipleFileUploadSuccess.style.display = "none";
-            multipleFileUploadError.innerHTML = (response && response.message) || "Ops!!! ocorreu um erro inesperado.";
+            multipleFileUploadError.innerHTML = (response && response.message) || "Ocorreu um erro inesperado!";
         }
-    }
-
+    };
     xhr.send(formData);
 }
 
