@@ -6,11 +6,11 @@
 var Photo = require('./photos/photo.js');
 
 // Casos de Teste
-describe('ContactUs Suite Scenarios', function(){
+describe('Cenários de Testes InstaRitter', function(){
 	beforeEach(function(){
 		browser.ignoreSynchronization = true;
 		browser.driver.manage().window().maximize();
-		ContactPage.get();
+		Photo.get();
 	});	
 	
 	it('Verifica se o título da página', function(){
@@ -41,13 +41,13 @@ describe('ContactUs Suite Scenarios', function(){
 	});
 	
 	it('Exibir mensagem de sucesso, caso ocorra', function () {
-		ContactPage.submit('teste.gif');
-		expect(ContactPage.singleFileUploadSuccess.isDisplayed()).toBe(true);
+		Photo.submit('teste.gif');
+		expect(Photo.singleFileUploadSuccess.isDisplayed()).toBe(true);
 	});
 	
 	it('Exibir mensagem de erro, caso ocorra', function () {
-		ContactPage.submit('');
-		expect(ContactPage.singleFileUploadSuccess.isPresent()).toBe(false);
+		Photo.submit('');
+		expect(Photo.singleFileUploadSuccess.isPresent()).toBe(false);
 		expect(element(by.id('singleFileUploadError', 'Ocorreu um erro inesperado!')));
 	});
 	
