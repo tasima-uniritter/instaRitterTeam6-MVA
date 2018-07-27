@@ -15,18 +15,18 @@ describe('Cenários de Testes InstaRitter', function(){
 	
 	it('Verifica se o título da página', function(){
 		browser.get('');
-		expect(browser.getTitle()).toEqual('InstaRitter Upload/Download de Fotos');
+		expect(browser.getTitle()).toEqual('InstaRitter');
 	});
 		
 	it('Verifica se o Logo do website é apresentado na tela', function(){
 		browser.get('');
-		var mypic = element(by.css("upload-header h2[src*='/images/header.jpg']"));
+		var mypic = element(by.css(".upload-header h2[src*='/images/header.jpg']"));
 		expect(mypic.isPresent()).toBe(true);
 	});
 	
 	it('Verifica se a target Upload Foto é apresentado na tela', function(){
 		browser.get('');
-		expect(element(by.css('h3')).getText()).toEqual('Upload Foto:');
+		expect(element(by.tagName('h3')).getText()).toEqual('Upload Foto:');
 	});
 	
 	
